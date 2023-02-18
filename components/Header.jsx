@@ -6,8 +6,8 @@ import {BsCardChecklist} from 'react-icons/bs'
 
 const Header = () => {
     return (
-        <header className='fixed px-2 xs:px-1 top-0 left-0 bg-black w-screen h-16 flex items-center justify-between'>
-            <Image width={150} height={40} src={"/logo.png"} className="object-contain xs:w-16 " />
+        <header className='fixed px-2 xs:px-1 top-0 left-0 bg-black w-screen h-16 flex items-center justify-between z-50'>
+            <Image width={150} height={40} src={"/logo.png"} className="object-contain xs:w-16 " alt='logo' />
 
             <div className="w-2/3 bg-white h-10 rounded-md flex overflow-hidden">
                 <input type="text" className="w-[90%] xs:w-[80%] bg-transparent placeholder:text-gray-500 h-full focus:outline-none p-2" placeholder="Search here" />
