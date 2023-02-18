@@ -4,7 +4,7 @@ import Product from './Product'
 const ProductFeed = ({data}) => {
   return (
     <>
-    <h1 className="text-5xl font-bold my-3">
+    <h1 className="text-5xl font-bold my-3 xs:text-2xl xs:text-center">
       Other Products
     </h1>
     <hr />
