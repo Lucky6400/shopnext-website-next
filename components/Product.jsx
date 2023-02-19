@@ -1,7 +1,15 @@
 import React from 'react'
 import { Rating } from 'react-simple-star-rating'
+import Button from './UI/Button';
+import { useDispatch, useSelector } from 'react-redux';
+import { cartActions } from '../redux/cartReducer';
 
 const Product = ({ item }) => {
+    const dispatch = useDispatch();
+    const items = useSelector(state => state.cartReducer.items)
+    console.log("items are these -->", items)
+
+
     return (
         <div key={item.id} className="w-1/5 xs:w-4/5 shadow-sm shadow-gray-400 hover:scale-105 transition-all ease-in-out cursor-pointer bg-white py-3 px-3 h-max z-30">
             <p className="text-gray-500 mb-2 text-xs font-semibold">{item.category.toUpperCase()}</p>
@@ -27,7 +35,9 @@ const Product = ({ item }) => {
 
             <p className="text-xs text-gray-600 mt-2">{item.rating.rate} out of 5</p>
 
-            <button className="my-2 bg-red-700 text-white rounded-lg border border-red-500 p-2 w-full hover:bg-red-500 transition-all ease-in-out">Add to cart</button>
+            <Button onClick={() => {
+                dispatch(cartActions.addToCart({quantity: 1, ...item}))
+            }} text={"Add to Cart"}/>
         </div>
     )
 }

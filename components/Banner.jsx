@@ -8,15 +8,16 @@ const Banner = () => {
         <Carousel autoPlay infiniteLoop showStatus={false}
         interval={6000}
         showThumbs={false}
+        
         >
           <div>
-            <img loading='lazy' src="https://images.pexels.com/photos/5728302/pexels-photo-5728302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='w-full object-contain h-full' alt="" />
+            <img loading='lazy' src="https://images.pexels.com/photos/5728302/pexels-photo-5728302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='w-full h-72' alt="" />
           </div>
           <div>
-            <img loading='lazy' src="https://images.pexels.com/photos/7319301/pexels-photo-7319301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='w-full object-contain h-full' alt="" />
+            <img loading='lazy' src="https://images.pexels.com/photos/7319301/pexels-photo-7319301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='w-full h-72' alt="" />
           </div>
           <div>
-            <img loading='lazy' src="https://images.pexels.com/photos/5638813/pexels-photo-5638813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='w-full object-contain h-full' alt="" />
+            <img loading='lazy' src="https://images.pexels.com/photos/5638813/pexels-photo-5638813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className='w-full h-72' alt="" />
           </div>
 
         </Carousel>

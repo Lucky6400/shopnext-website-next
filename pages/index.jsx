@@ -9,11 +9,11 @@ import Poster from '../components/Poster'
 import ProductFeed from '../components/ProductFeed'
 
 const Home = ({ data, categoryData }) => {
-  console.log(categoryData)
+  //console.log(categoryData)
   return (
     <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>Shopnext - Best site for all your needs</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

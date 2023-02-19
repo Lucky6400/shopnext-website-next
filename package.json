@@ -6,14 +6,19 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.11",
+    "@reduxjs/toolkit": "^1.9.2",
     "firebase": "^9.17.1",
     "next": "latest",
     "next-auth": "^4.19.2",
+    "nprogress": "^0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
     "react-responsive-carousel": "^3.2.23",
-    "react-simple-star-rating": "^5.1.7"
+    "react-simple-star-rating": "^5.1.7",
+    "redux-persist": "^6.0.0"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
