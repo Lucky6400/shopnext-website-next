@@ -27,9 +27,9 @@ function CartItem({ formatPrice, item }) {
                 <p className="text-sm flex items-center justify-between text-gray-500">
                     <span>Quantity</span>
                     <span className='flex items-center gap-3'>
-                        <Button onClick={() => dispatch(cartActions.subtractOne(item.title))} text={"-"} />
+                        <Button className="w-8 h-8" onClick={() => dispatch(cartActions.subtractOne(item.title))} text={"-"} />
                         {item.quantity}
-                        <Button onClick={() => dispatch(cartActions.addOne(item.title))} text={"+"} />
+                        <Button className="w-8 h-8" onClick={() => dispatch(cartActions.addOne(item.title))} text={"+"} />
                     </span>
                 </p>
                 <p className="text-sm flex justify-between text-gray-500">

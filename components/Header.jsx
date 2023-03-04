@@ -25,7 +25,7 @@ const Header = () => {
                 <SearchButton/>
             </div>
 
-            <div className="flex gap-4 items-center xs:gap-1 text-3xl xs:text-lg text-white">
+            <div className="flex pr-5 xs:pr-1 sm:pr-2 md:pr-3 gap-4 items-center xs:gap-1 text-3xl xs:text-lg text-white">
                 <div onClick={() => router.push('/cart')} className='cursor-pointer hover:text-red-600 transition-all ease-in-out p-2 rounded-full flex flex-col items-center relative'><AiOutlineShoppingCart /><span className="text-sm">Cart</span>
                     <span className="absolute bg-red-700 w-4 h-4 text-center rounded-full text-white top-2 right-0 text-xs ">{quantity}</span>
                 </div>

@@ -22,7 +22,7 @@ const Account = () => {
                                 <span className="text-sm">Account</span>
                             </div> :
                             <div className={accountTextStyle}>
-                                <img src={session.user.image} className="w-8 h-8 rounded-full" alt="" />
+                                <img src={session.user.image} className="w-8 h-8 rounded-full" alt="user image" />
                                 <span className="text-sm">{session.user.name}</span>
                             </div>
                         }
